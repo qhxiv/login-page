@@ -1,0 +1,127 @@
+:root {
+  --main-color: #AD171C;
+}
+
+body {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: whitesmoke;
+  margin: 0;
+  height: 100vh;
+}
+
+html {
+  font-family: Roboto;
+  font-size: 18px;
+}
+
+.main  {
+  background-color: white;
+  padding: 16px;
+  border-radius: 16px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.main * {
+  display: block;
+}
+
+input {
+  padding: 8px;
+}
+
+.password {
+  margin-top: 16px;
+}
+
+button {
+  background: var(--main-color);
+  color: white;
+  border: 1px solid var(--main-color);
+  transition: all ease .2s;
+  border-radius: 4px;
+  padding: 4px 8px;
+}
+
+button:hover {
+  color: var(--main-color);
+  background: white;
+  cursor: pointer;
+}
+
+.login {
+  width: 100%;
+  margin-top: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  border: 1px solid var(--main-color);
+}
+
+.login:hover {
+  background-color: white;
+  color: var(--main-color);
+}
+
+.forgot {
+  text-align: center;
+  font-size: 12px;
+  padding: 12px 0;
+  border-bottom: 1px solid lightgray;
+}
+
+.signup {
+  margin-top: 16px;
+  width: 100%;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal__panel {
+  background-color: white;
+  padding: 16px;
+  border-radius: 8px;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  color: var(--main-color);
+}
+
+.modal__header h1 {
+  margin: 0;
+  font-size: 24px;
+}
+
+.modal__header i {
+  color: var(--main-color);
+  font-size: 20px;
+  transition: all ease .2s;
+  cursor: pointer;
+}
+
+.modal__header i:hover {
+  opacity: 0.6;
+}
+
+.modal__form input {
+  margin-top: 16px;
+}
+
+.modal__signup {
+  margin-top: 16px;
+  width: 100%;
+}
